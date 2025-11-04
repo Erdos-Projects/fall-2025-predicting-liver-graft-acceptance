@@ -27,8 +27,8 @@ We use sklearn.decomposition with PCA.
 - In applying it to microarray data, it decomposes the dataset into components that are as statistically independent from the other as possible, potentially revealing the underlying gene expression patterns for gene clustering and classification.
 - Theory:
   - ICA breaks down our original gene profile dataset $X$ into a matrix $A$ representing the mixing system with the latent variables and S containing the source signals of the gene signatures whose rows are mutually independent statistically independent coefficients, such that $X = A \cdot S$.
-  - The matrices A and S are unknown, so we want to recover the original signals from the observations X using the linear transform 
-				\[Y = WX\]
+  - The matrices $A$ and $S$ are unknown, so we want to recover the original signals from the observations X using the linear transform 
+				$$Y = WX$$
 		where $Y$ is the estimation of the source signal $S$ and $W$ is the demixing matrix. 
 - To implement this in Python, we use sklearn.decomposition with FastICA.
 
