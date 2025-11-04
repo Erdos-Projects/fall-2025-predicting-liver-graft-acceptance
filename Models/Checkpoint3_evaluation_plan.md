@@ -1,4 +1,4 @@
-**Modeling Approach**
+## **Modeling Approach**
 
 Goal: to predict if a liver transplant will be rejected based on gene expression data. 
 - Our dataset is composed of microarray data with gene expression values, where each sample is a liver biopsy from a patient. 
@@ -6,7 +6,7 @@ Goal: to predict if a liver transplant will be rejected based on gene expression
 - The dataset is split into X_train.csv, X_test.csv, y_train.csv, y_test.csv to prevent data leakage, and that only the training datasets are used for feature selection and model training. 
 - For model cross validation, StratifiedKFold is used to ensure both groups are represented in each split due to the uneven distribution. 
 
-**Feature Selection**
+### **Feature Selection**
 
 Our dataset is of dimension (763, 18644) where the number of features far exceeds the number of samples. This makes our subsequent models prone to overfitting, so feature selection is needed to reduce the dimensions of the dataset. 
 
@@ -33,7 +33,7 @@ We use sklearn.decomposition with PCA.
 - To implement this in Python, we use sklearn.decomposition with FastICA.
 
 
-**Models**
+### **Models**
 
 We have a binary classification defined as:
 0: non-rejection
