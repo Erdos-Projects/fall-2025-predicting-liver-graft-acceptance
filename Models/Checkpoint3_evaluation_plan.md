@@ -1,14 +1,16 @@
 **Modeling Approach**
+
 Goal: to predict if a liver transplant will be rejected based on gene expression data. 
 - Our dataset is composed of microarray data with gene expression values, where each sample is a liver biopsy from a patient. 
 - We used a 80/20 train-test split for testing our models, with a 70/30 distribution of our non-rejection and rejection group, respectively, maintained in each dataset. 
-- The dataset is split into X_train.csv, X_test.csv, y_train.csv, y_test.csv to prevent data leakage, and only the training datasets are used for features selection and model training. 
-For model cross validation, StratifiedKFold is used to ensure both groups are represented in each split due to the uneven distribution. 
+- The dataset is split into X_train.csv, X_test.csv, y_train.csv, y_test.csv to prevent data leakage, and that only the training datasets are used for feature selection and model training. 
+- For model cross validation, StratifiedKFold is used to ensure both groups are represented in each split due to the uneven distribution. 
 
 **Feature Selection**
+
 Our dataset is of dimension (763, 18644) where the number of features far exceeds the number of samples. This makes our subsequent models prone to overfitting, so feature selection is needed to reduce the dimensions of the dataset. 
 
-Principal Component Analysis
+**Principal Component Analysis**
 - One method to reduce the dimensions of our dataset by capturing the principal components of the dataset, i.e. the directions with maximum variance. 
 - By creating a scree plot, we observe how the captured variance changes with each component, and choose the best number of components for our model. 
 - A constraint is the mutual orthogonality of components, which is not always appropriate for biomedical data. PCA also only uses second-order statistics with the covariance between observed variables and may fail to extract other features that may require higher-order statistics. 
@@ -32,14 +34,15 @@ We use sklearn.decomposition with PCA.
 
 
 **Models**
+
 We have a binary classification defined as:
 0: non-rejection
 1: rejection
 so we want to use classification models. Each model is primarily compared using the accuracy score, with the ROC-AUC score as an additional reference. 
 
 **Logistic Regression**
-A simple supervised algorithm for classification, which fits the goal of our project. 
-Logistic regression can be run on both the entire dataset and a subset of the dataset after feature selection, PCA, and ICA has been used. 
+- A simple supervised algorithm for classification, which fits the goal of our project. 
+- Logistic regression can be run on both the entire dataset and a subset of the dataset after feature selection, PCA, and ICA has been used. 
 
 **Random Forest**
 - This is an ensemble learning method useful for classification by creating multiple decision trees to make better predictions during training. 
