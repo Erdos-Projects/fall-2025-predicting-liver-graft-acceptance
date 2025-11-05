@@ -24,7 +24,7 @@ See more details in [EDA and statistical analysis_1104.ipynb](https://github.com
 
 
 ## Modeling Workflow
-Our dataset was split into a training set and testing set using [train_test_split.ipynb](). The files are detailed in [data_split_and_feature_selection.md](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/data_split_and_feature_selection.md).
+Our dataset was split into a training set and testing set using [train_test_split.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/train_test_split.ipynb). The files are detailed in [data_split_and_feature_selection.md](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/data_split_and_feature_selection.md).
 
 To further decrease the size of our dataset, the feature selection we used was t-test, PCA, and Independent Component Analysis (ICA). The models we chose for classification were Logistic Regression, Random Forest, and XGBoost.
 
@@ -34,7 +34,4 @@ See more details in [Checkpoint 3](https://docs.google.com/document/d/1lXauiea1D
 The training results for our models can be found in [Checkpoint 4.](https://docs.google.com/document/d/1Y4EvtKCyqkBQrXOt7FIfvxMKX9Ov-_0U-zRjuhxCuEU/edit?usp=sharing)
 
 Our best model was identified to be Logistic Regression with 500 genes chosen from one component is ICA, where it had the highest accuracy and ROC-AUC score. This was fit to the test set using [final_model_test_results.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/final_model_test_results.ipynb) which gave a final accuracy of 0.88889 and AUC = 0.961. Additional confusion matrix and ROC-AUC curve can be found in [Plots](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/tree/main/Models/Plots). 
-
-We could add slide deck and link here at the end too once we upload it?
-[Checkpoint 5](https://docs.google.com/document/d/1uGCoXnhvnfNjrd15Ap4mVyRvNdBr_XMwIifV_6-agKs/edit?usp=sharing)
 
