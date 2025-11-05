@@ -18,7 +18,7 @@ See more details in [Checkpoint 1](https://docs.google.com/document/d/10DiEbP9I1
 Due to the large size of the raw microarray dataset containing 48744 features, preprocessing was needed to clean the data, detailed in [Checkpoint 2](https://docs.google.com/document/d/16MgFH9F_lhokG8RnbQstxtkFHi3-UE2dls6Zt_3UuN0/edit?usp=sharing). with the relevant notebooks found in [Checkpoint2_Microarray_Processing](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/tree/main/Checkpoint2_Microarray_Processing).
 
 ### Exploratory Data Analysis
-The data was initially analyzed via t-test to identify genes that were significantly differentially expressed between rejection and non-rejection liver transplant biopsies. The data was then visualized using Principal Component Analysis (PCA) to illustrate the separation between the groups before and after a t-test, and a heatmap was used to reveal the distinct transcriptional profiles between rejection and non-rejection liver transplant biopsies. 
+The data was initially analyzed via t-test, Principal Component Analysis (PCA), and heatmaps to identify and visualize statistically important genes used to distinguish the differences between the rejection and non-rejection liver transplant biopsies. 
 
 See more details in [EDA and statistical analysis_1104.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/EDA%20and%20statistical%20analysis/EDA%20and%20statistical%20analysis_1104.ipynb).
 
