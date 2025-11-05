@@ -13,24 +13,27 @@ Our project references the paper [Defining an NK Cell–enriched Rejection-like 
 See more details in [Checkpoint 1.](https://docs.google.com/document/d/10DiEbP9I1G3XYccKOn7K5ndFGJNbdZNPD-gfpPvCwfM/edit?usp=sharing)
 
 ## Data Analysis Workflow
-# Preprocessing
+
+### Preprocessing
 Due to the large size of the raw microarray dataset containing 48744 features, preprocessing was needed to clean the data, detailed in [Checkpoint 2](https://docs.google.com/document/d/16MgFH9F_lhokG8RnbQstxtkFHi3-UE2dls6Zt_3UuN0/edit?usp=sharing) with the relevant notebooks found in [Checkpoint2_Microarray_Processing](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/tree/main/Checkpoint2_Microarray_Processing).
 
-# Exploratory Data Analysis
-The data was visualized with a correlation heatmap and PCA (...)
+### Exploratory Data Analysis
+The data was initially analyzed via t-test to identify genes that were significantly differentially expressed between rejection and non-rejection liver transplant biopsies. The data was then visualized using Principal Component Analysis (PCA) to illustrate the separation between the groups before and after a t-test, and a heatmap was used to reveal the distinct transcriptional profiles between rejection and non-rejection liver transplant biopsies. 
 
-[Checkpoint 3](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/Checkpoint3_evaluation_plan.md#models)
+See more details in [EDA and statistical analysis_1104.ipynb.](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/EDA%20and%20statistical%20analysis/EDA%20and%20statistical%20analysis_1104.ipynb)
 
 
-## Modeling (and linking to specific files/folder in the github too)
+## Modeling Workflow
+Our dataset was split into a training set and testing set using [train_test_split.ipynb](). 
 
-***(maybe include diagram of modeling workflow here?)***
+To further decrease the size of our dataset, the feature selection we used was t-test, PCA, and Independent Component Analysis (ICA). The models we chose for classification were Logistic Regression, Random Forest, and XGBoost.
 
-To further decrease the size of our dataset, the feature selection we used is 
-[Checkpoint 3](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/Checkpoint3_evaluation_plan.md#models)
+See more details in [Checkpoint 3](https://docs.google.com/document/d/1lXauiea1D0aFap8AOmuSvD5to4yxaVE1lUdqahYrsIk/edit?usp=sharing)
 
-The final results for our models can be found in [Checkpoint 4](https://docs.google.com/document/d/1Y4EvtKCyqkBQrXOt7FIfvxMKX9Ov-_0U-zRjuhxCuEU/edit?usp=sharing)
+## Results
+The training results for our models can be found in [Checkpoint 4.](https://docs.google.com/document/d/1Y4EvtKCyqkBQrXOt7FIfvxMKX9Ov-_0U-zRjuhxCuEU/edit?usp=sharing)
 
+Our best model was identified to be Logistic Regression with 500 genes chosen from one component is ICA, where it had the highest accuracy and ROC-AUC score. This was fit to the test set using [final_model_test_results.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/final_model_test_results.ipynb) which gave a final accuracy of 0.88889 and AUC = 0.961. Additional confusion matrix and ROC-AUC curve can be found in [Figures]. 
 
 We could add slide deck and link here at the end too once we upload it?
 [Checkpoint 5](https://docs.google.com/document/d/1uGCoXnhvnfNjrd15Ap4mVyRvNdBr_XMwIifV_6-agKs/edit?usp=sharing)
