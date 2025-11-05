@@ -10,7 +10,7 @@ The training files will be referenced by our models for training and cross-valid
 
 # Feature Selection
 ## t-test
-In choosing features for our models, a t-test was conducted via [t-test_full_dataset.ipynb](), with the top genes selected detailed in 
+In choosing features for our models, a t-test was conducted via [t-test_full_dataset.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/t-test_full_dataset.ipynb), with the top genes selected detailed in 
 - [top_400_genes.csv](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/top_400_genes.csv)
 - [top_1000_genes.csv](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/top_1000_genes.csv)
 
