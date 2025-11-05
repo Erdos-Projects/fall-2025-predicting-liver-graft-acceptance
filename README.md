@@ -28,7 +28,7 @@ Our dataset was split into a training set and testing set using [train_test_spli
 
 To further decrease the size of our dataset, the feature selection we used was t-test, PCA, and Independent Component Analysis (ICA). The models we chose for classification were Logistic Regression, Random Forest, and XGBoost.
 
-See more details in [Checkpoint 3](https://docs.google.com/document/d/1lXauiea1D0aFap8AOmuSvD5to4yxaVE1lUdqahYrsIk/edit?usp=sharing)
+See more details in [Checkpoint 3](https://docs.google.com/document/d/1lXauiea1D0aFap8AOmuSvD5to4yxaVE1lUdqahYrsIk/edit?usp=sharing).
 
 ## Results
 The training results for our models can be found in [Checkpoint 4.](https://docs.google.com/document/d/1Y4EvtKCyqkBQrXOt7FIfvxMKX9Ov-_0U-zRjuhxCuEU/edit?usp=sharing)
