@@ -1,6 +1,6 @@
 # Data 
 
-This folder contains [train_test_split.ipynb]() which splits our dataset into the training and testing dataset, labeled as 
+This folder contains [train_test_split.ipynb]() while will need to be run first before running all other models and EDA. This splits our dataset into the training and testing dataset, labeled as 
 - X_train.csv (too large to upload to github)
 - [y_train.csv](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/y_train.csv)
 - [X_test.csv](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Data/X_test.csv)
