@@ -1,7 +1,7 @@
-# Predicting Liver Transplant Rejection
+# Predicting Graft Acceptance/Rejection After Liver Transplantation
 Team Members: Gonca Bulbul, Noah Mac, Winnie Lau
 
-This is our Fall 2025 Erdős Institute Data Science Boot Camp project. 
+This is the repository for our Fall 2025 Erdős Institute Data Science Boot Camp project. 
 
 ## Introduction 
 Liver transplantation is a life-saving therapy where the diseased liver is replaced with another person's healthy liver, but one of the main complications of liver transplantation is immune-mediated rejection. This occurrs when patient's immune system  attacks the transplanted liver.
