@@ -33,5 +33,7 @@ See more details in [Checkpoint 3](https://docs.google.com/document/d/1lXauiea1D
 ## Results
 The training results for our models can be found in [Checkpoint 4.](https://docs.google.com/document/d/1Y4EvtKCyqkBQrXOt7FIfvxMKX9Ov-_0U-zRjuhxCuEU/edit?usp=sharing)
 
-Our best model was identified to be Logistic Regression with 500 genes chosen from one component is ICA, where it had the highest accuracy and ROC-AUC score. This was fit to the test set using [final_model_test_results.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/final_model_test_results.ipynb) which gave a final accuracy of 0.88889 and AUC = 0.961. Additional confusion matrix and ROC-AUC curve can be found in [Plots](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/tree/main/Models/Plots). 
+Our best model was identified to be Logistic Regression with 500 genes chosen from one component is ICA, where it had the highest accuracy and ROC-AUC score. This was fit to the test set using [final_model_test_results.ipynb](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/blob/main/Models/final_model_test_results.ipynb) which gave a final accuracy of 0.88889 and AUC = 0.961. 
+
+Additional confusion matrix and ROC-AUC curve can be found in [Plots](https://github.com/Erdos-Projects/fall-2025-predicting-liver-graft-acceptance/tree/main/Models/Plots). 
 
